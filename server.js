@@ -1,7 +1,8 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
 
-mongoose.connect("mongodb+srv://root:root@cluster0.6skciju.mongodb.net/", {
+const MONGO_URI='mongodb+srv://root:root@cluster0.6skciju.mongodb.net/'
+mongoose.connect(MONGO_URI, {
   // useNewUrlParser: true,
   // useUnifiedTopology: true,
 
